@@ -14,9 +14,12 @@
         <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet" />
         <link href="https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic" rel="stylesheet" type="text/css" />
         <!-- Third party plugin CSS-->
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css" rel="stylesheet" />
+        <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css" rel="stylesheet" /> -->
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        
     </head>
     <body id="page-top">
         <!-- Navigation-->
@@ -59,7 +62,8 @@
                             Hello, My name is Ed Kristian but I preferred calling me E.K. for short.
                             I'm a Software Engineer that has interest in building applications using new technologies 
                             and having fun on gaining experience in some challenges. I have a degree in Information Technology 
-                            and currently working at Ipay88 Philippines. I seek towards a career where I can learn and improved my skills.
+                            and currently working at Ipay88 Philippines. I seek towards a career where I can learn about new technologies
+                            and improved my skills.
                         </p>
                     </div>
                 </div>
@@ -80,9 +84,8 @@
                             <p class="text-muted mb-0">Javascript</p>
                             <p class="text-muted mb-0">Bootstrap</p>
                             <p class="text-muted mb-0">AJAX</p>
+                            <p class="text-muted mb-0">React.Js</p>
                             <p class="text-muted mb-0">C#.Net MVC/ Web API</p>
-                            <p class="text-muted mb-0">PHP</p>
-                            <p class="text-muted mb-0">Java</p>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6 text-center">
@@ -122,33 +125,24 @@
                 <h2 class="text-center mt-0">My Projects</h2>
                 <hr class="divider my-4" />
                 <div class="row no-gutters">
-                    <div class="col-lg-4 col-sm-6 text-center">
-                        <a class="portfolio-box" href="assets/img/portfolio/fullsize/Spotify.jpg">
-                            <img class="img-fluid" src="assets/img/portfolio/thumbnails/Spotify.jpg" alt="" />
+                    <div class="col-lg-6 col-sm-8 text-center">
+                        <a class="portfolio-box" id="project1">
+                            <img class="img-fluid" src="assets/img/portfolio/thumbnails/Spotify.jpg" alt="" height="500" width="500" />
                             <div class="portfolio-box-caption">
                                 <div class="project-category text-white-50">Asp.Net Core</div>
                                 <div class="project-name">Playlist Creator App</div>
                             </div>
                         </a>
                     </div>
-                    <div class="col-lg-4 col-sm-6 text-center">
-                        <a class="portfolio-box" href="assets/img/portfolio/fullsize/Pagibig.jpg">
-                            <img class="img-fluid" src="assets/img/portfolio/thumbnails/Pagibig.jpg" alt="" />
-                            <div class="portfolio-box-caption">
-                                <div class="project-category text-white-50">ASP.Net MVC</div>
-                                <div class="project-name">Application for Interest Repricing</div>
-                            </div>
-                        </a>
-
-                    </div>
-                    <div class="col-lg-4 col-sm-6 text-center">
-                        <a class="portfolio-box" href="assets/img/portfolio/fullsize/React.png">
-                            <img class="img-fluid" src="assets/img/portfolio/thumbnails/React.png" alt="" />
+           
+                    <div class="col-lg-6 col-sm-8 text-center">
+                        <a class="portfolio-box" id="project3">
+                            <img class="img-fluid" src="assets/img/portfolio/thumbnails/chat.jpg" alt="" height="500" width="500" />
                             <div class="portfolio-box-caption">
                                 <div class="project-category text-white-50">React.js</div>
-                                <div class="project-name">Project Name</div>
-                            </div>
-                        </a>
+                                <div class="project-name">Chat Application</div>
+                            </div>                           
+                        </a>           
                     </div>
                 </div>
             </div>
@@ -191,10 +185,107 @@
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Third party plugin JS-->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+        <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script> -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
         <script src="js/year.js"></script>
+
+        <!-- Modal Project1 -->
+        <div class="modal" id="project1modal">
+            <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+            
+                <!-- Modal Header -->
+                <div class="modal-header">
+                <h4 class="modal-title">Playlist Creator App</h4>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                
+                <!-- Modal body -->
+                <div class="modal-body">
+                This app automatically creates playlist on User's Spotify Accounts based on user interest.
+                </div>
+                
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                <button type="button" class="btn btn-success" onclick="location.href='https://github.com/ikeyy/PlayListCreatorApp';">Go to Github Repo</button>
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                </div>
+                
+            </div>
+            </div>
+        </div>
+        <!-- Modal Project2 -->
+        <div class="modal" id="project2modal">
+            <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+            
+                <!-- Modal Header -->
+                <div class="modal-header">
+                <h4 class="modal-title">Application for Interest Repricing</h4>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                
+                <!-- Modal body -->
+                <div class="modal-body">
+                This project is a 
+                </div>
+                
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-success" onclick="location.href='https://www.pagibigfund.gov.ph/';">Visit Site</button>
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                </div>
+                
+            </div>
+            </div>
+        </div>
+        <!-- Modal Project3 -->
+        <div class="modal" id="project3modal">
+            <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+            
+                <!-- Modal Header -->
+                <div class="modal-header">
+                <h4 class="modal-title">React Chat App</h4>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <img class="img-fluid" src="assets/img/portfolio/gif/ChatApp.gif"  alt="React App" width=770 height=400/>
+                </div>
+                
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                <button type="button" class="btn btn-success" onclick="location.href='https://chatonthego.netlify.app';">Visit Site</button>
+                <button type="button" class="btn btn-success" onclick="location.href='https://github.com/ikeyy/ChatontheGo';" >Go to Github Repo</button>
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                </div>
+                
+            </div>
+            </div>
+        </div>
+
+        <script type="text/javascript">
+        $(document).ready(function () {
+            $("#project1").click(function () {
+                $('#project1modal').modal('show'); 
+            });
+            $("#project2").click(function () {
+                $('#project2modal').modal('show'); 
+            });
+            $("#project3").click(function () {
+                $('#project3modal').modal('show'); 
+            });
+        });
+
+
+
+        </script>
+
     </body>
 </html>
